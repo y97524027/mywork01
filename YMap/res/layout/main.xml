@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+
+        <LinearLayout
+                android:id="@+id/choise_container"
+                android:alpha="0.0"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:orientation="vertical"
+                >
+            <RelativeLayout
+                    android:id="@+id/relative_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                <TextView
+                        android:id="@+id/txt_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#121042"
+                        android:text="距离:"
+                        />
+                <RadioGroup
+                        android:id="@+id/rg_distance"
+                        android:layout_toRightOf="@id/txt_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                    <RadioButton
+                            android:id="@+id/rb_distance_500"
+
+                            style="@style/SearchRadioButtonStyle"
+                            android:text="500米"
+                            />
+                    <RadioButton
+                            android:id="@+id/rb_distance_1000"
+
+                            style="@style/SearchRadioButtonStyle"
+                            android:text="1000米"
+                            />
+                    <RadioButton
+                            android:id="@+id/rb_distance_2000"
+
+                            style="@style/SearchRadioButtonStyle"
+                            android:text="2000米"
+                            />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <!-- 搜索类型-->
+            <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                <TextView
+                        android:id="@+id/txt_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#121042"
+                        android:text="类型:"
+                        />
+                <RadioGroup
+                        android:id="@+id/rg_type"
+                        android:layout_toRightOf="@id/txt_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                    <RadioButton
+                            android:id="@+id/rb_type_bank"
+
+                            style="@style/SearchRadioButtonStyle"
+                            android:text="银行"
+                            />
+                    <RadioButton
+                            android:id="@+id/rb_type_food"
+
+                            style="@style/SearchRadioButtonStyle"
+                            android:text="美食"
+                            />
+                    <RadioButton
+                            android:id="@+id/rb_type_hospital"
+
+                            style="@style/SearchRadioButtonStyle"
+                            android:text="医院"
+                            />
+                    <RadioButton
+                            android:id="@+id/rb_type_hotel"
+
+                            style="@style/SearchRadioButtonStyle"
+                            android:text="酒店"
+                            />
+                </RadioGroup>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <Button
+
+            android:id="@+id/btn_search"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnSearch"
+            android:background="#fff"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="搜索"
+            />
+
+    <!--<EditText-->
+            <!--android:id="@+id/txtSearch"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="查找地点、公交、地铁"-->
+            <!--/>-->
+
+    <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_gravity="bottom"
+            >
+        <RadioButton
+                android:id="@+id/near_by"
+
+                style="@style/RadioButtonStyle"
+                android:text="附近"
+
+                />
+        <RadioButton
+                android:id="@+id/plan_route"
+
+                style="@style/RadioButtonStyle"
+                android:text="路线"
+                />
+        <RadioButton
+                android:id="@+id/directed_by"
+
+                style="@style/RadioButtonStyle"
+                android:text="导航"
+                />
+
+    </RadioGroup>
+
+
+
+
+
+</FrameLayout>
+
