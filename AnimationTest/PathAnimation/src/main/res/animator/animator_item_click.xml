@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 淡出-->
+    <objectAnimator android:duration="1000"
+                    android:propertyName="imageAlpha"
+                    android:valueType="floatType"
+                    android:valueFrom="1"
+                    android:valueTo="0.5"/>
+
+    <!-- 点击菜单时，放大、淡出-->
+    <objectAnimator android:duration="1000"
+                    android:propertyName="scaleX"
+                    android:valueType="floatType"
+                    android:valueFrom="1"
+                    android:valueTo="3"
+            />
+    <objectAnimator android:duration="1000"
+                    android:propertyName="scaleY"
+                    android:valueType="floatType"
+                    android:valueFrom="1"
+                    android:valueTo="3"/>
+
+</set>

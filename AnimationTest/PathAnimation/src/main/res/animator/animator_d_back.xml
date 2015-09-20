@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+            android:duration="1000"
+            android:propertyName="x"
+            android:valueType="floatType"
+            android:valueTo="588"
+            android:valueFrom="294.1"/>
+    <objectAnimator
+            android:duration="1000"
+            android:propertyName="y"
+            android:valueType="floatType"
+            android:valueTo="986"
+            android:valueFrom="581.5"/>
+        <objectAnimator android:duration="1000"
+                        android:propertyName="rotation"
+                        android:interpolator="@android:interpolator/overshoot"
+                        android:valueType="floatType"
+                        android:valueFrom="360"
+                        android:valueTo="0"/>
+</set>
